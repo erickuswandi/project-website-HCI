@@ -1,0 +1,356 @@
+body {
+    background-image: url(assets/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    
+}
+
+.navbaratas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(58, 216, 208);
+    background-color: black;
+}
+
+.logo img {
+    width: 200px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navbar {
+    margin-right: 130px;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navbar ul a{
+    cursor:pointer;
+}
+
+#menu {
+    border: 1px solid rgb(58, 216, 208);
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a{
+    display: inline-block;
+    color: rgb(58, 216, 208);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.1s ease;
+}
+
+.navbar ul li.dropdown ul{
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95));
+    position: absolute;
+    padding-left: 0; 
+    width: 210px;
+    display: none;
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(58, 216, 208);
+    color: black;
+    border-style: none;
+}
+
+.navbar ul li.dropdown ul li a{
+    color: white;
+    width: 180px;
+    padding: 15px;
+}
+
+.navbar ul li.dropdown:hover ul{
+    display: block;
+}
+
+.navbar ul li.dropdown ul li a:hover{
+    color: black;
+}
+
+
+.contents {
+    display: flex;
+    max-width: 1250px;
+    margin: 70px auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+.backgroundasian {
+    max-width: 1250px;
+    margin-bottom: 0;
+
+}
+
+.backgroundasian img {
+    width: 100%;
+}
+
+.slogan {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -150px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.slogan h1 {
+    margin: 0;
+    /* font-size: 40px; */
+    font-family: 'Muli', sans-serif;
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+}
+
+.slogan h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(58, 216, 208);
+    margin-left: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.containerlistsong {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    max-width: 100%;
+    display: flex;
+    /* background: transparent; */
+    /* padding: 50px; */
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-top: 60px;
+    padding: 20px;    
+}
+
+
+.containerlistsong2 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    max-width: 100%;
+    display: flex;
+    /* background: transparent; */
+    /* padding: 50px; */
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.listsong {
+    flex: 1;
+    background: transparent;
+    padding: 15px;
+    justify-content: center;
+    transition: 0.2s ease;
+}
+
+.listsong h1 {
+    color: rgb(58, 216, 208);
+    margin: 0;
+    padding:0;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.listsong h2 {
+    color:rgb(58, 216, 208);
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+      
+}
+
+.listsong h4 {
+    color:rgb(58, 216, 208);
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.listsong img {
+    width: 100%;
+    max-width:190px;
+    height: 170px;
+    border-radius: 7.5px;
+}
+
+
+.listsong:hover {
+    transform: scale(1.1);
+    background-color: whitesmoke;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    background-color: black;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    /* justify-content: space-between; */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.copyright h4 {
+    margin: 0;
+}
+
+.copyright p1 {
+    margin-top: 2.5px;
+    font-size: 11px;
+}
+
+.copyright p2 {
+    font-size:10px;
+}
+
+.followus {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+
+.followus img {
+    margin: 8px;
+    padding: 7px;
+    background-size: cover;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.followus img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 0; */
+    align-items: center;
+    background-color: black;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    /* justify-content: space-between; */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.copyright h4 {
+    margin: 0;
+}
+
+.copyright p1 {
+    margin-top: 2.5px;
+    font-size: 11px;
+}
+
+.copyright p2 {
+    font-size:10px;
+}
+
+.followus {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.followus img {
+    margin: 8px;
+    padding: 5px;
+    background-size: cover;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.followus p {
+    font-family: 'Poppins', 'Sans Serif';
+    color: whitesmoke;
+}
+
+.followus img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+    .containerlistsong {
+    flex-direction: column;
+    }
+
+    .backgroundasian {
+        display: none;
+    }
+
+    .slogan {
+        margin-top: 50px;
+    }
+    .containerlistsong2 {
+        flex-direction: column;
+    }
+    .navbaratas {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .navbar {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+}
+

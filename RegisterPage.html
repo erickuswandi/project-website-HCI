@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX Player - REGISTER</title>
+     <link rel="stylesheet" href="styleregister.css">
+     <!-- link untuk google online fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Maven+Pro:wght@500&family=Muli:wght@600&family=Poppins:wght@200&family=Public+Sans&display&family=Kanit:wght@300&family=Manrope&display=swap=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbaratas">
+        <div class="logo">
+            <img src="./logo/logo2.png" alt="not found">
+        </div>
+        <!-- dropdown menu -->
+        <div class="navbar">
+            <ul>
+                <li class="dropdown">
+                    <a id="menu">MENU</a>
+                    <ul>
+                        <li><a href="./HomePagee.html">Home</a></li>
+                        <li><a href="./PremiumPage.html">Premium</a></li>
+                        <li><a href="./Top10AsianMusicPage.html">TOP 10 Asian Music</a></li>
+                        <li><a href="./MusicbyGenrePage.html">Music by Genre</a></li>
+                        <li><a href="./RegisterPage.html">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="loginbox">
+        <div class="form">
+            <h2>Register Form</h2>  
+            <label for="">FullName</label>
+            <input type="text" name="username" id="username" placeholder="Type your FullName Here">
+            <h3 id="errorname"></h3>
+            <label for="">Email</label>
+            <input type="text" name="email" id="email" placeholder="Type your Email Here">
+            <h3 id="erroremail"></h3>
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" placeholder="Type your Password Here"> <br>
+            <label for="">Confirm Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm your Password Here">
+            <h3 id="errorpass"></h3>
+            <div class="gender">
+                <label>Choose your Gender :</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <h3 id="errorgender"></h3>
+            </div>
+
+            <div class="payment">
+                <label>Select your Payment Method :</label><br>
+                <input type="checkbox" id="debitpayment">
+                <label for="debitpayment">Debit Card</label><br>
+                <input type="checkbox" id="creditpayment">
+                <label for="creditpayment">Credit Card</label><br>
+                <input type="checkbox" id="paypalpayment">
+                <label for="paypalpayment">Paypal</label>
+                <h3 id="errorpayment"></h3>
+            </div>
+            <div class="termcondition">
+                <input type="checkbox" id="termcondition">
+                <label for="termcondition">Agree with our Terms & Conditions</label>
+                <h3 id="errorterm"></h3> 
+            </div>
+           
+            <input type="button" value="Register" id="register">
+            
+            <h3 id="success"></h3>   
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="copyright">
+            <h4>Copyright © 2019</h4>
+            <p1>[BASED] Jakarta, Indonesia</p1>
+        </div>
+        <div class="followus">
+            <p>FOLLOW US ON </p>
+            <i> <a href="http://facebook.com"> <img src="./assets/facebookk.png" alt=""></a></i>
+            <i> <a href="http://instagram.com"> <img src="./assets/instagram.png" alt=""></a></i>
+            <i> <a href="http://twitter.com"> <img src="./assets/twitter.png" alt=""></a></i>
+        </div>
+    </div>     
+</body>
+<script src="./validation.js"></script>
+</html>

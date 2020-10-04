@@ -1,0 +1,281 @@
+body {
+    background-image: url(assets/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbaratas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(58, 216, 208);
+    background-color: black;
+}
+
+.logo img {
+    width: 200px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navbar {
+    margin-right: 130px;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navbar ul a{
+    cursor:pointer;
+}
+
+#menu {
+    border: 1px solid rgb(58, 216, 208);
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a{
+    display: inline-block;
+    color: rgb(58, 216, 208);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.1s ease;
+}
+
+.navbar ul li.dropdown ul{
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95));
+    position: absolute;
+    padding-left: 0; 
+    width: 210px;
+    display: none;
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(58, 216, 208);
+    color: black;
+    border-style: none;
+}
+
+.navbar ul li.dropdown ul li a{
+    color: white;
+    width: 180px;
+    padding: 15px;
+}
+
+.navbar ul li.dropdown:hover ul{
+    display: block;
+}
+
+.navbar ul li.dropdown ul li a:hover{
+    color: black;
+}
+
+.contents {
+    display: flex;
+    max-width: 1100px;
+    margin: 70px auto;
+    justify-content: center;
+    /* padding: 10px 0; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.slogan {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.slogan h1 {
+    margin: 0;
+    /* font-size: 40px; */
+    font-family: 'Muli', sans-serif;
+    /* font-size: 40px; */
+    color: white;
+}
+
+
+.slogan h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(58, 216, 208);
+}
+
+.slogan h2 {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(58, 216, 208);
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    padding-bottom: 20px;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9));
+    border-radius: 5px;
+    border: 1px solid rgb(58, 216, 208);
+    box-shadow: 2px 5px 25px rgb(58, 216, 208);
+    flex-wrap: wrap;
+}
+.namepackage {
+    color:rgb(58, 216, 208);
+    font-family: 'Maven Pro',sans-serif;
+}
+
+.price {
+    font-family: 'Maven Pro',sans-serif;
+    color: rgb(58, 216, 208);
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.monthly {
+    color:rgb(58, 216, 208);
+    font-family: 'Maven Pro',sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 2.5px;
+}
+
+.packages ul{
+    padding: 0;
+}
+
+.list li{
+    display: flex;
+    font-family: 'Kanit',sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(58, 216, 208);
+    padding: 0;
+    color: whitesmoke;
+}
+
+
+.button {
+    font-family: 'Muli','sans-serif';
+    padding: 10px 30px;
+    font-size: 1.4em;
+    margin: 15px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:black;
+    background-color: rgb(58, 216, 208);
+    transition: 0.2s ease;
+    
+}
+.button:hover{
+    background-color: whitesmoke;
+    transform:scale(1.1);
+}
+
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 0; */
+    align-items: center;
+    background-color: black;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    /* justify-content: space-between; */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.copyright h4 {
+    margin: 0;
+}
+
+.copyright p1 {
+    margin-top: 2.5px;
+    font-size: 11px;
+}
+
+.copyright p2 {
+    font-size:10px;
+}
+
+.followus {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.followus img {
+    margin: 8px;
+    padding: 5px;
+    background-size: cover;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.followus p {
+    font-family: 'Poppins', 'Sans Serif';
+    color: whitesmoke;
+}
+
+.followus img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+    .navbaratas {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .navbar {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+  
+}

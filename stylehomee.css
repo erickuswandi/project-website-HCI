@@ -1,0 +1,486 @@
+body {
+    background-image: url(assets/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbaratas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(58, 216, 208);
+    background-color: black;
+}
+
+.logo img {
+    width: 200px;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.navbar {
+    margin-right: 130px;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+}
+
+.navbar ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.navbar ul a{
+    cursor:pointer;
+}
+
+#menu {
+    border: 1px solid rgb(58, 216, 208);
+}
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+}
+.navbar ul li a{
+    display: inline-block;
+    color: rgb(58, 216, 208);
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.1s ease;
+}
+
+.navbar ul li.dropdown ul{
+    background: linear-gradient(rgba(0,0,0,0.95), rgba(0,0,0,0.95));
+    position: absolute;
+    padding-left: 0; 
+    width: 210px;
+    display: none;
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(58, 216, 208);
+    color: black;
+    border-style: none;
+}
+
+.navbar ul li.dropdown ul li a{
+    color: white;
+    width: 180px;
+    padding: 15px;
+}
+
+.navbar ul li.dropdown:hover ul{
+    display: block;
+}
+
+.navbar ul li.dropdown ul li a:hover{
+    color: black;
+}
+
+.contents {
+    display: flex;
+    /* max-width: 1200px; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1500px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+.slideimage {
+    width: 500px;
+    flex: 1;
+    margin-right: 5px;
+    display: none;    
+}
+
+.slideimage img {
+    width: 100%;
+    width: 500px;
+    height: 300px;
+    margin: 0;
+}
+
+.slideimage p{
+    padding: 5px;
+    background:rgb(58, 216, 208);
+    color:black;
+    font-family: 'Poppins', 'sans-serif';
+    max-width: 500px;
+    margin: 0;
+    font-size: 25px;
+    border: 1px solid rgb(58, 216, 208);
+    font-weight: 1000;
+}
+
+.slideimage a {
+    color: black;
+}
+
+.slideimage button {
+    margin: 0;
+    margin-top: -5px;
+    width : 500px;
+    background: whitesmoke;
+    color: black;
+    height: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-style: none;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.slideimage button:hover {
+    background-color: thistle;
+}
+
+.slideimage a {
+    text-decoration: none;
+    list-style: none;
+}
+.buttonslide {
+    margin-top: -120px;
+    margin-bottom: 120px;
+    position: relative;
+}
+.buttonslide a {  
+    text-decoration: none;
+    cursor: pointer;  
+    position: absolute;  
+    width: auto;  
+    padding: 15px;  
+    font-size: 25px;  
+    transition: 0.2s ease;
+    color: whitesmoke;    
+    background-color: rgba(64, 64, 64, 0.9); 
+    cursor: pointer;
+}
+
+.right {  
+    right: 0;    
+}  
+    
+.left:hover, .right:hover {  
+    background-color: rgb(58, 216, 208);  
+}  
+
+.slogan {
+    width: 100%;
+    margin: 0;
+    flex: 1;
+    max-width:500px;
+    text-align: left;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 10px; */
+
+}
+
+.slogan h1 {
+    margin: 0;
+    /* font-size: 40px; */
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    font-size: auto;
+}
+
+.sponsoredby {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sponsoredby img {
+    width: 130px;
+    box-sizing: border-box;
+}
+.sponsoredby p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    /* background-color: whitesmoke; */
+    margin-right: 25px;
+    padding: 0;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: space-around;
+}
+
+.aboutus p {
+    justify-content: center;
+    width: 110px;
+    font-family: 'Kanit', sans-serif;
+    color:black;
+    background:rgb(58, 216, 208) ;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 20px;
+}
+.slogan h2 {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(58, 216, 208);
+}
+
+.ourspeciality {
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.ourspeciality h1 {
+    color: whitesmoke;
+    /* margin-top: 30px; */
+    font-family: 'Maven Pro', sans-serif;
+    /* padding: 10px; */
+    margin: 0;
+    border-bottom: 1px solid rgb(58, 216, 208);
+}
+
+.topcontent {
+    /* margin-top: 5px; */
+    background: transparent;
+    padding: 0;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+.specialitylist {
+    display: flex;
+    flex-direction: row;
+}
+
+.topcontent1 {
+    /* width: 30%; */
+    margin: 10px;
+    transition: 1s;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Public Sans', sans-serif;
+    border-radius: 2.5px;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    
+}
+
+
+.topcontent1 h2 {
+    color: rgb(58, 216, 208);
+}
+
+.topcontent1 h4 {
+    color: whitesmoke;
+}
+
+.topcontent1:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    /* justify-content: space-between; */
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.copyright h4 {
+    margin: 0;
+}
+
+.copyright p1 {
+    margin-top: 2.5px;
+    font-size: 11px;
+}
+
+.copyright p2 {
+    font-size:10px;
+}
+
+.followus {
+    display: flex;
+    flex-direction: row;
+    margin-right: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.followus img {
+    margin: 8px;
+    padding: 5px;
+    background-size: cover;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.followus p {
+    font-family: 'Poppins', 'Sans Serif';
+    color: whitesmoke;
+}
+
+.followus img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 850px) {
+    .navbaratas {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .navbar {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .slogan h1 {
+        display: center;
+    }
+
+    .aboutus {
+        margin-top: 20px;
+    }
+ 
+    .sponsoredby {
+        margin-top: 20px;
+    }
+    
+    .ourspeciality {
+        margin-top: 20px;   
+    }
+    .topcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .topcontent1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .topcontent1 h4 {
+        margin-left: 15px;
+    }
+
+
+    .specialitylist {
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    .slideimage {
+        margin-top: 25px;
+    }
+  
+}
+
+@media screen and (max-width: 650px) {
+    .navbaratas {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .navbar {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .slogan {
+        margin-left: 25px;
+        
+        display: center;
+    }
+ 
+    .sponsoredby {
+        margin-top: 20px;
+    }
+    .topcontent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .topcontent1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .topcontent1 h4 {
+        margin-left: 15px;
+    }
+
+
+    .keterangan {
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+    }
+    .slideimage {
+        margin-top: 25px;
+    }
+  
+}
